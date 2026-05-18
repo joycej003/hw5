@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8" />
+    <title>MY APP</title>
+    <link rel="stylesheet" href="/style.css">
+
+  </head>
+  <body>
+
+    <h1 >Book Library</h1>
+
+    <form action="/books" method="POST">
+        <input type="text" placeholder="title" name="title" />
+        <input type="text" placeholder="author" name="author" />
+        <button type="submit">Submit</button>
+    </form>
+
+      
+  <div>
+    <h2>Replace Book</h2>
+    <p>Replace a book with another book.</p>
+    <input type="text" id="update-title" placeholder="Title to replace" />
+    <input type="text" id="new-title" placeholder="New title" />
+    <input type="text" id="new-author" placeholder="New author" />
+    <button id="update-button">Replace Book</button>
+  </div>
+
+  <div>
+    <h2>Remove Book</h2>
+    <p>
+      Delete a book. Does nothing if there are no more books.
+    </p>
+    <input type="text" id="delete-title" placeholder="Title to delete" />
+    <button id="delete-button">Delete Book</button>
+    <div id="message">  </div>
+  </div>
+
+
+    <h2>Current Library</h2>
+
+    <ul class="books">
+    <% for(var i = 0; i < books.length; i++) {%>
+    <li class="book">
+        <span><%= books[i].title %></span>:
+        <span><%= books[i].author %></span>
+        <button class="delete-btn" data-title="<%= books[i].title %>">Delete</button>
+
+    </li>
+    <% } %>
+    </ul>
+
+
+
+
+
+  <script src="/main.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,59 @@
+
+h1 {
+  font-family: Verdana;
+  padding: 4 px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 5px 2px 3px rgb(0, 0, 0);
+}
+
+h2 {
+  color: rgb(255, 255, 255);
+  text-shadow: 5px 2px 3px rgb(0, 0, 0);
+
+}
+
+body {
+  margin: auto;
+  gap: 5px;
+  padding: 2rem;
+  background: url(https://imgs.search.brave.com/Tr6o6i8M1Jupyb6CCH2jOcyaqFGhoimOw_dxAMsgSqY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNDkv/OTAxLzg0Mi9zbWFs/bC9zb2Z0LWJsdXJy/ZWQtYWJzdHJhY3Qt/bGlicmFyeS1iYWNr/Z3JvdW5kLXdpdGgt/Ym9va3MtcGVhY2Vm/dWwtcmVhZGluZy12/aWJlLXBob3RvLmpw/Zw);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color : rgb(255, 255, 255);
+  font-size: 22px;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(1px);
+  z-index: -1;
+}
+ 
+button {
+  padding: 4px 20px;
+  background-color: rgb(243, 216, 182);
+  border: none;  
+  border-radius: 5px;
+  color: rgb(4, 0, 0);
+}
+
+input {
+  padding: 4px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  background-color: rgb(184, 233, 232);
+}
+
+.books {
+  display: grid;
+  font-size: 20px;
+  gap: 0.7rem;
+}
+
+
+ 
